@@ -1,0 +1,287 @@
+[
+  {
+    "product_id": "P001",
+    "product_title": "Apple iPhone 15 Pro Max",
+    "product_image": "https://i.ibb.co.com/0VPy7R5/iphone-15-pro-max.jpg",
+    "category": "Smartphones",
+    "price": 1299,
+    "description": "Experience the ultimate smartphone with the iPhone 15 Pro Max.",
+    "specification": [
+      "6.7-inch Super Retina XDR display",
+      "A17 Bionic chip",
+      "Triple-camera system (48MP Main, 12MP Telephoto, 12MP Ultrawide)",
+      "LiDAR Scanner",
+      "Up to 2TB storage"
+    ],
+    "availability": true,
+    "rating": 4.8,
+    "cartCount": 1,
+    "wished": false
+  },
+  {
+    "product_id": "P002",
+    "product_title": "Samsung Galaxy S23 Ultra",
+    "product_image": "https://i.ibb.co.com/2WDJqKk/Samsung-23-ultra.jpg",
+    "category": "Smartphones",
+    "price": 1199,
+    "description": "Capture epic moments with the Samsung Galaxy S23 Ultra.",
+    "specification": [
+      "6.8-inch Dynamic AMOLED 2X display",
+      "Snapdragon 8 Gen 2",
+      "200MP Quad camera",
+      "5000mAh battery",
+      "Up to 1TB storage"
+    ],
+    "availability": false,
+    "rating": 4.7,
+    "cartCount": 1,
+    "wished": false
+  },
+  {
+    "product_id": "P003",
+    "product_title": "Dell XPS 13",
+    "product_image": "https://i.ibb.co.com/GsKYjb8/Dell-XPS-13.png",
+    "category": "Laptops",
+    "price": 999,
+    "description": "Compact and powerful, Dell XPS 13 is perfect for professionals.",
+    "specification": [
+      "13.4-inch FHD+ display",
+      "Intel Core i7",
+      "16GB RAM, 512GB SSD",
+      "Intel Iris Xe Graphics",
+      "Up to 10 hours battery life"
+    ],
+    "availability": true,
+    "rating": 4.6,
+    "cartCount": 1,
+    "wished": false
+  },
+  {
+    "product_id": "P004",
+    "product_title": "Apple MacBook Pro 16-inch",
+    "product_image": "https://i.ibb.co.com/vj9CnMv/Apple-macbook-pro.png",
+    "category": "MacBook",
+    "price": 2499,
+    "description": "Powerful MacBook Pro with M2 Pro chip for unmatched performance.",
+    "specification": [
+      "16-inch Liquid Retina XDR display",
+      "M2 Pro chip",
+      "32GB RAM, 1TB SSD",
+      "16-core GPU",
+      "Up to 21 hours battery life"
+    ],
+    "availability": true,
+    "rating": 4.9,
+    "cartCount": 1,
+    "wished": false
+  },
+  {
+    "product_id": "P005",
+    "product_title": "Sony WH-1000XM5 Headphones",
+    "product_image": "https://i.ibb.co.com/DpghBCM/Sony-wh-100xm5.png",
+    "category": "Accessories",
+    "price": 399,
+    "description": "Industry-leading noise-canceling headphones by Sony.",
+    "specification": [
+      "Wireless Bluetooth",
+      "Up to 30 hours battery life",
+      "Touch controls",
+      "Adaptive Sound Control",
+      "Alexa built-in"
+    ],
+    "availability": false,
+    "rating": 4.8,
+    "cartCount": 1,
+    "wished": false
+  },
+  {
+    "product_id": "P006",
+    "product_title": "Samsung Galaxy Watch 5",
+    "product_image": "https://i.ibb.co.com/9nrC9pS/Samung-galaxy-watch-5.jpg",
+    "category": "Smart Watches",
+    "price": 299,
+    "description": "Track your fitness and health with the Galaxy Watch 5.",
+    "specification": [
+      "1.4-inch Super AMOLED display",
+      "BioActive Sensor",
+      "Up to 40 hours battery life",
+      "GPS and LTE options",
+      "5ATM water resistance"
+    ],
+    "availability": true,
+    "rating": 4.5,
+    "cartCount": 1,
+    "wished": false
+  },
+  {
+    "product_id": "P007",
+    "product_title": "Apple Watch Series 8",
+    "product_image": "https://i.ibb.co.com/ChHh6Jc/Apple-watch-series-8.jpg",
+    "category": "Smart Watches",
+    "price": 399,
+    "description": "Apple Watch Series 8 with advanced health monitoring features.",
+    "specification": [
+      "Always-On Retina display",
+      "ECG and Blood Oxygen sensor",
+      "Up to 18 hours battery life",
+      "Swimproof design",
+      "Crash detection"
+    ],
+    "availability": false,
+    "rating": 4.7,
+    "cartCount": 1,
+    "wished": false
+  },
+  {
+    "product_id": "P008",
+    "product_title": "Logitech MX Master 3 Mouse",
+    "product_image": "https://i.ibb.co.com/vxpV6C2/Logitech-MX-Master-3.webp",
+    "category": "Accessories",
+    "price": 99,
+    "description": "Advanced wireless mouse for high productivity.",
+    "specification": [
+      "Customizable buttons",
+      "Ultrafast MagSpeed scroll",
+      "Bluetooth and USB connection",
+      "4000 DPI sensor",
+      "Up to 70 days battery life"
+    ],
+    "availability": true,
+    "rating": 4.9,
+    "cartCount": 1,
+    "wished": false
+  },
+  {
+    "product_id": "P009",
+    "product_title": "Asus ROG Zephyrus G14",
+    "product_image": "https://i.ibb.co.com/7gKrr4J/Asus-rog-zephyrus-G14.jpg",
+    "category": "Laptops",
+    "price": 1499,
+    "description": "High-performance gaming laptop with AMD Ryzen 9.",
+    "specification": [
+      "14-inch QHD display",
+      "AMD Ryzen 9",
+      "16GB RAM, 1TB SSD",
+      "NVIDIA GeForce RTX 3060",
+      "Compact and lightweight"
+    ],
+    "availability": false,
+    "rating": 4.8,
+    "cartCount": 1,
+    "wished": false
+  },
+  {
+    "product_id": "P010",
+    "product_title": "Google Pixel 7 Pro",
+    "product_image": "https://i.ibb.co.com/9pfm5wD/Google-pixel-7-pro.jpg",
+    "category": "Smartphones",
+    "price": 899,
+    "description": "Pixel 7 Pro with Google's best AI camera features.",
+    "specification": [
+      "6.7-inch OLED display",
+      "Google Tensor G2",
+      "Triple rear camera (50MP Main, 12MP Ultra-wide, 48MP Telephoto)",
+      "5G support",
+      "5000mAh battery"
+    ],
+    "availability": true,
+    "rating": 4.6,
+    "cartCount": 1,
+    "wished": false
+  },
+  {
+    "product_id": "P011",
+    "product_title": "Apple iPad Air",
+    "product_image": "https://i.ibb.co.com/3MBVGmj/Apple-ipad-air.jpg",
+    "category": "Tablets",
+    "price": 599,
+    "description": "Lightweight and powerful tablet for all your creative needs.",
+    "specification": [
+      "10.9-inch Liquid Retina display",
+      "M1 chip",
+      "64GB storage",
+      "12MP rear camera, 7MP front camera",
+      "USB-C connector"
+    ],
+    "availability": true,
+    "rating": 4.8,
+    "cartCount": 1,
+    "wished": false
+  },
+  {
+    "product_id": "P012",
+    "product_title": "Bose SoundLink Revolve+ Speaker",
+    "product_image": "https://i.ibb.co.com/S6NH2P9/Bose-soundlink-revolve-plus.jpg",
+    "category": "Accessories",
+    "price": 299,
+    "description": "Portable Bluetooth speaker with immersive 360° sound.",
+    "specification": [
+      "Water-resistant design",
+      "Battery life up to 16 hours",
+      "Built-in speakerphone",
+      "Wireless range up to 30 feet",
+      "Deep bass performance"
+    ],
+    "availability": true,
+    "rating": 4.7,
+    "cartCount": 1,
+    "wished": false
+  },
+  {
+    "product_id": "P013",
+    "product_title": "HP Spectre x360 14",
+    "product_image": "https://i.ibb.co.com/PzF4cW5/HP-Spectre-x360-14.png",
+    "category": "Laptops",
+    "price": 1399,
+    "description": "Versatile 2-in-1 laptop for productivity and creativity.",
+    "specification": [
+      "13.5-inch 3K2K OLED touch display",
+      "Intel Core i7",
+      "16GB RAM, 512GB SSD",
+      "360-degree hinge",
+      "HP Sure View privacy screen"
+    ],
+    "availability": true,
+    "rating": 4.8,
+    "cartCount": 1,
+    "wished": false
+  },
+  {
+    "product_id": "P014",
+    "product_title": "Samsung Galaxy Tab S8",
+    "product_image": "https://i.ibb.co.com/4PfKZL1/Samsung-galaxy-tab-s8.jpg",
+    "category": "Tablets",
+    "price": 849,
+    "description": "High-performance tablet with S Pen support.",
+    "specification": [
+      "11-inch TFT display",
+      "Snapdragon 8 Gen 1",
+      "8GB RAM, 256GB storage",
+      "8000mAh battery",
+      "Dual rear cameras"
+    ],
+    "availability": true,
+    "rating": 4.6,
+    "cartCount": 1,
+    "wished": false
+  },
+  {
+    "product_id": "P015",
+    "product_title": "Microsoft Surface Pro 9",
+    "product_image": "https://i.ibb.co.com/7N8dyq7/Microsoft-surface-pro-9.png",
+    "category": "Tablets",
+    "price": 999,
+    "description": "Surface Pro 9 with powerful performance and flexibility.",
+    "specification": [
+      "13-inch PixelSense Flow display",
+      "Intel Core i5",
+      "8GB RAM, 128GB SSD",
+      "Kickstand with removable keyboard",
+      "Windows 11"
+    ],
+    "availability": true,
+    "rating": 4.7,
+    "cartCount": 1,
+    "wished": false
+  }
+]

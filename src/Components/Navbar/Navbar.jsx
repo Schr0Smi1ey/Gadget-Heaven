@@ -9,8 +9,7 @@ import "./Navbar.css";
 
 const NavBar = () => {
   const navigate = useNavigate();
-  const { cartItem, wishItem, cartItemPrice, wishItemPrice } =
-    useContext(CartContext);
+  const { cartItem, wishItem, cartItemPrice } = useContext(CartContext);
   const [isOpen, setIsOpen] = useState(false);
   const [isOpenCart, setIsOpenCart] = useState(false);
   const [isOpenWish, setIsOpenWish] = useState(false);

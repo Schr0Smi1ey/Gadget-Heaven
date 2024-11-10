@@ -1,7 +1,6 @@
 import { useContext, useEffect } from "react";
 import { CartContext } from "../../Contexts/CartContext";
 import Chart from "./Chart";
-import colours from "../../../public/assets/colours.png";
 
 const Statistics = () => {
   const { cartItemList } = useContext(CartContext);
@@ -10,17 +9,7 @@ const Statistics = () => {
   }, []);
   return (
     <div className="mb-10 container mx-auto">
-      <div className="container mx-auto relative bg-[#9538E2]  py-10 text-white">
-        <div className="hidden lg:flex absolute bottom-0 -right-[5%]">
-          <img src={colours} alt="" className="opacity-40 w-[70%]" />
-        </div>
-        <div className="hidden lg:flex absolute bottom-0 -left-[2%]">
-          <img
-            src={colours}
-            alt=""
-            className="-rotate-180 w-[70%] opacity-40 hidden sm:flex"
-          />
-        </div>
+      <div className="relative bg-[#9538E2] py-10 text-white">
         <div className="py-5">
           <div className="text-center mb-5">
             <h1 className="font-bold text-3xl mb-3">Statistics</h1>

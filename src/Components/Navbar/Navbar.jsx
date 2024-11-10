@@ -77,7 +77,11 @@ const NavBar = () => {
           window.innerWidth > 1024 ? "dropdown-end" : "dropdown-right"
         } text-black`}
       >
-        <div tabIndex={0} role="button" className="btn btn-ghost btn-circle">
+        <div
+          tabIndex={0}
+          role="button"
+          className="btn bg-white border-none hover:bg-[#9538E2] btn-circle"
+        >
           <div className="indicator">
             <img
               src={cart}
@@ -117,7 +121,11 @@ const NavBar = () => {
         )}
       </div>
       <div className="dropdown lg:dropdown-end text-black">
-        <div tabIndex={0} role="button" className="btn btn-ghost btn-circle">
+        <div
+          tabIndex={0}
+          role="button"
+          className="btn bg-white border-none hover:bg-[#9538E2] btn-circle"
+        >
           <div className="indicator">
             <img
               src={wish}
@@ -157,7 +165,7 @@ const NavBar = () => {
         <div
           tabIndex={0}
           role="button"
-          className="btn btn-ghost btn-circle avatar"
+          className="btn bg-white border-none hover:bg-[#9538E2] btn-circle avatar"
         >
           <div className="w-10 rounded-full">
             <img
@@ -170,7 +178,7 @@ const NavBar = () => {
         {isProfileOpen && (
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content font-medium bg-base-100 rounded-box z-[1] mt-16 lg:mt-0 w-40 lg:w-52 p-2 shadow-lg"
+            className="menu menu-sm dropdown-content font-medium hover:bg-[#9538E2] rounded-box z-[1] mt-16 lg:mt-0 w-40 lg:w-52 p-2 shadow-lg"
           >
             <li>
               <a className="justify-between p-2">
@@ -199,14 +207,22 @@ const NavBar = () => {
           : "bg-white text-black"
       } rounded-t-xl`}
     >
-      <div className="navbar-start">
-        <a
-          onClick={handleLogoBtn}
-          className="text-black flex items-center gap-2 px-3 py-2 sm:px-4 sm:py-2 rounded-lg font-bold bg-white hover:bg-[#9538E2] hover:border-2 hover:border-white hover:text-white text-lg sm:text-xl"
+      <div className={`navbar-start`}>
+        <div
+          className={`${
+            location.pathname === "/"
+              ? ""
+              : "border-2 border-[#9538E2] rounded-lg"
+          }`}
         >
-          Gadget <span className="text-orange-500">Heaven</span>
-          <img src={design} alt="" className="w-6 h-6" />
-        </a>
+          <a
+            onClick={handleLogoBtn}
+            className="text-black flex items-center gap-2 px-3 py-2 sm:px-4 sm:py-2 rounded-lg font-bold bg-white hover:bg-[#9538E2] hover:border-2 hover:border-white hover:text-white text-lg sm:text-xl"
+          >
+            Gadget <span className="text-orange-500">Heaven</span>
+            <img src={design} alt="" className="w-6 h-6" />
+          </a>
+        </div>
       </div>
       <div className="navbar-center hidden lg:flex">{navElements}</div>
       <div className="navbar-end">

@@ -1,14 +1,15 @@
-import { useContext, useEffect } from "react";
+import { useContext } from "react";
 import { CartContext } from "../../Contexts/CartContext";
 import Chart from "./Chart";
+import { Helmet } from "react-helmet-async";
 
 const Statistics = () => {
   const { cartItemList } = useContext(CartContext);
-  useEffect(() => {
-    document.title = "Statistics | Gadget Heaven";
-  }, []);
   return (
     <div className="mb-10 container mx-auto">
+      <Helmet>
+        <title>Gadget Heaven | Statistics</title>
+      </Helmet>
       <div className="relative bg-[#9538E2] py-10 text-white">
         <div className="py-5">
           <div className="text-center mb-5">

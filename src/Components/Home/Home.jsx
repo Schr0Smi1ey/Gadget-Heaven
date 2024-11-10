@@ -1,13 +1,13 @@
 import Banner from "../Banner/Banner";
 import Products from "../Products/Products";
-import { useEffect } from "react";
+import { Helmet } from "react-helmet-async";
 
 const Home = () => {
-  useEffect(() => {
-    document.title = "Home | Gadget Heaven";
-  }, []);
   return (
     <div>
+      <Helmet>
+        <title>Gadget Heaven | Home </title>
+      </Helmet>
       <Banner></Banner>
       <Products></Products>
     </div>

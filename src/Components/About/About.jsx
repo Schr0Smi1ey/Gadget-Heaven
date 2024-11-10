@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import question from "../../../public/assets/Question.png";
 import design from "../../../public/assets/Design.png";
 import email from "../../../public/assets/send.png";
@@ -10,11 +10,9 @@ import Commenter1 from "../../../public/assets/commenter1.jpg";
 import Commenter2 from "../../../public/assets/commenter2.png";
 import Commenter3 from "../../../public/assets/commenter3.png";
 import Commenter4 from "../../../public/assets/commenter4.png";
+import { Helmet } from "react-helmet-async";
 
 const About = () => {
-  useEffect(() => {
-    document.title = "About Us | Gadget Heaven";
-  }, []);
   const cardData = [
     {
       title: "Power Up with Style",
@@ -102,6 +100,9 @@ const About = () => {
 
   return (
     <div className="container mx-auto mb-20">
+      <Helmet>
+        <title>Gadget Heaven | About Us</title>
+      </Helmet>
       <div className="bg-[#9538E2] relative py-5">
         <div className="text-center mb-5">
           <h1 className="flex justify-center items-center gap-3 font-bold text-3xl mb-3 text-white">
@@ -144,7 +145,7 @@ const About = () => {
           </div>
           <div className="lg:w-1/2 p-2 grid grid-cols-1 gap-4">
             {reasons.map((reason, index) => (
-              <div key={index} className={`shadow-lg rounded-lg p-6`}>
+              <div key={index} className={`shadow-lg rounded-lg p-3 lg:p-6`}>
                 <h3 className="text-2xl text-center md:text-left font-semibold mb-3">
                   {reason.title}
                 </h3>

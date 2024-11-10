@@ -3,6 +3,7 @@ import Cart from "../Cart/Cart";
 import Wish from "../Wish/Wish";
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 
 const Dashboard = () => {
   const [cartActive, setCartActive] = useState(true);
@@ -10,9 +11,6 @@ const Dashboard = () => {
 
   const location = useLocation();
   const { active } = location.state || { active: "cart" };
-  useEffect(() => {
-    document.title = "Dashborad | Gadget Heaven";
-  }, []);
   const handleCartActive = () => {
     setCartActive(true);
     setWishActive(false);
@@ -31,7 +29,6 @@ const Dashboard = () => {
   return (
     <div className="container mx-auto text-white">
       <div className="bg-[#9538E2] relative py-5">
-       
         <div className="text-center mb-5">
           <h1 className="font-bold text-3xl mb-3">Dashboard</h1>
           <p className="text-gray-300 w-[90%] md:w-1/2 mx-auto">
@@ -63,7 +60,21 @@ const Dashboard = () => {
         </div>
       </div>
       <div className="text-black">
-        {cartActive ? <Cart></Cart> : <Wish></Wish>}
+        {cartActive ? (
+          <div>
+            <Helmet>
+              <title>Gadget Heaven | Dashborad | Cart </title>
+            </Helmet>
+            <Cart></Cart>
+          </div>
+        ) : (
+          <div>
+            <Helmet>
+              <title>Gadget Heaven | Dashborad | WishList </title>
+            </Helmet>
+            <Wish></Wish>
+          </div>
+        )}
       </div>
     </div>
   );

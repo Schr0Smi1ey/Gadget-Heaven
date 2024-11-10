@@ -242,13 +242,13 @@ const About = () => {
               Join the Gadget <span className="text-orange-500"> Heaven </span>
               Family
             </h1>
-            <div className="space-x-4 md:space-y-0 flex items-center justify-center mx-auto text-center">
+            <div className="space-x-4 md:space-y-0 flex flex-col md:flex-row gap-2 items-center justify-center mx-auto text-center">
               <input
                 type="email"
                 placeholder="Enter your email"
-                className="block w-3/4 lg:w-1/2 xl:w-1/3 bg-white font-semibold p-4 pl-10 focus:outline-none rounded-lg"
+                className="block sm:w-3/4 lg:w-1/2 xl:w-1/3 bg-white font-semibold p-3 md:p-4 pl-10 focus:outline-none rounded-lg"
               />
-              <button className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-black border-opacity-50 p-3 px-6 rounded-lg font-semibold text-lg">
+              <button className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-black border-opacity-50 p-2 px-4 md:p-3 md:px-6 rounded-lg font-semibold text-lg">
                 Subscribe
               </button>
             </div>

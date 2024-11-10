@@ -73,7 +73,7 @@ const ProductDetailsCard = ({ product }) => {
           <h1 className="text-center md:text-left mb-2 text-lg font-bold text-black">
             Specification:
           </h1>
-          <ul className="w-[90%] sm:w-[70%] mx-auto flex justify-center flex-col md:mx-0">
+          <ul className="w-[90%] sm:w-[70%] mx-auto lg:ml-4 flex justify-center flex-col md:mx-0">
             {specification.map((spec, index) => (
               <li key={index} className="list-disc">
                 {spec}
@@ -81,9 +81,7 @@ const ProductDetailsCard = ({ product }) => {
             ))}
           </ul>
         </div>
-        <h1 className="font-bold text-lg mb-1 text-center md:text-left">
-          Rating:
-        </h1>
+        <h1 className="font-bold text-lg text-center md:text-left">Rating:</h1>
         <div className="flex gap-3 items-center justify-center md:justify-start">
           <ReactStars
             count={5}
@@ -97,7 +95,7 @@ const ProductDetailsCard = ({ product }) => {
             activeColor="#ffd700"
             onChange={handleRatingChange}
           />
-          <h1 className="bg-[#FFD700] rounded-2xl px-3 font-medium">
+          <h1 className="bg-[#FFD700] rounded-2xl px-3 font-semibold">
             {rating}
           </h1>
         </div>

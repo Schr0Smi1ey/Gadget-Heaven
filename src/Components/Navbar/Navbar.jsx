@@ -1,4 +1,4 @@
-import wish from "../../../public/assets/icon/wish.svg";
+import wish from "../../../public/assets/icon/heart.png";
 import cart from "../../../public/assets/icon/cart.svg";
 import { NavLink, useLocation, useNavigate } from "react-router-dom";
 import { CartContext } from "../../Contexts/CartContext";
@@ -73,7 +73,11 @@ const NavBar = () => {
   );
   const navElementsEnd = (
     <div className="flex items-center justify-center sm:justify-left gap-2 sm:gap-5">
-      <div className="dropdown drop-down text-black">
+      <div
+        className={`dropdown ${
+          window.innerWidth > 1024 ? "dropdown-end" : "dropdown-right"
+        } text-black`}
+      >
         <div tabIndex={0} role="button" className="btn btn-ghost btn-circle">
           <div className="indicator">
             <img
@@ -92,28 +96,28 @@ const NavBar = () => {
         {isOpenCart && (
           <div
             tabIndex={0}
-            className="card card-compact dropdown-content bg-base-100 text-black z-[1] mt-3 w-52 shadow"
+            className="card card-compact dropdown-content bg-base-100 z-[1] mt-16 lg:mt-0 w-32 lg:w-52 shadow-lg"
           >
             <div className="card-body">
-              <span className="text-lg font-bold">
+              <span className="text-lg font-semibold">
                 <span className="text-[#9538E2]">{cartItem}</span> Items
               </span>
-              <span className="text-[#09080F99]">
-                Subtotal: ${cartItemPrice}
+              <span className="text-[#09080F99] text-xs sm:text-base md:text-lg">
+                Total: ${cartItemPrice}
               </span>
               <div className="card-actions">
                 <button
                   onClick={() => handleViewCart("cart")}
-                  className="btn bg-[#9538E2] text-lg text-white hover:bg-[#9538E2] btn-block"
+                  className="px-2 py-1 rounded-lg bg-[#9538E2] lg:text-lg text-white hover:bg-[#9538E2] btn-block"
                 >
-                  View cart
+                  Cart
                 </button>
               </div>
             </div>
           </div>
         )}
       </div>
-      <div className="dropdown dropdown-end text-black">
+      <div className="dropdown lg:dropdown-end text-black">
         <div tabIndex={0} role="button" className="btn btn-ghost btn-circle">
           <div className="indicator">
             <img
@@ -132,21 +136,18 @@ const NavBar = () => {
         {isOpenWish && (
           <div
             tabIndex={0}
-            className="card card-compact dropdown-content bg-base-100 z-[1] mt-3 w-52 shadow"
+            className="card card-compact dropdown-content bg-base-100 z-[1] mt-16 lg:mt-0 w-32 lg:w-52 shadow-lg"
           >
             <div className="card-body">
-              <span className="text-lg font-bold text-black">
+              <span className="text-lg font-semibold text-black">
                 <span className="text-[#9538E2]">{wishItem}</span> Items
-              </span>
-              <span className="text-[#09080F99]">
-                Subtotal: ${wishItemPrice}
               </span>
               <div className="card-actions">
                 <button
                   onClick={() => handleViewCart("wish")}
-                  className="btn text-lg bg-[#9538E2] text-white hover:bg-[#9538E2] btn-block"
+                  className="px-2 py-1 rounded-lg lg:text-lg bg-[#9538E2] text-white hover:bg-[#9538E2] btn-block"
                 >
-                  View Wishlist
+                  Wishlist
                 </button>
               </div>
             </div>
@@ -170,18 +171,20 @@ const NavBar = () => {
         {isProfileOpen && (
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+            className="menu menu-sm dropdown-content font-medium bg-base-100 rounded-box z-[1] mt-16 lg:mt-0 w-40 lg:w-52 p-2 shadow-lg"
           >
             <li>
-              <a className="justify-between">
+              <a className="justify-between p-2">
                 Profile
-                <span className="badge">New</span>
+                <span className="badge bg-[#9538E2] text-white font-semibold">
+                  New
+                </span>
               </a>
             </li>
             <li>
               <a>Settings</a>
             </li>
-            <li>
+            <li className="border-2 border-gray-200 w-fit px-1 mt-1 rounded-lg">
               <a>Logout</a>
             </li>
           </ul>
@@ -191,7 +194,7 @@ const NavBar = () => {
   );
   return (
     <div
-      className={`navbar container py-5 px-2 sm:p-5 mx-auto ${
+      className={`navbar container py-2 mb-2 md:py-5 px-1 sm:p-5 mx-auto ${
         location.pathname === "/"
           ? "bg-[#9538E2] text-white"
           : "bg-white text-black"
@@ -209,7 +212,7 @@ const NavBar = () => {
       <div className="navbar-center hidden lg:flex">{navElements}</div>
       <div className="navbar-end">
         <div className="hidden sm:flex">{navElementsEnd}</div>
-        <div className="dropdown dropdown-left">
+        <div className="dropdown dropdown-left shadow-lg rounded-full p-1">
           <div
             tabIndex={0}
             role="button"
@@ -232,7 +235,7 @@ const NavBar = () => {
             </svg>
           </div>
           {isOpen && (
-            <ul className="menu menu-sm dropdown-content text-black lg:text-white bg-base-100 rounded-box z-[1] mt-12 w-fit p-4 pb-4 space-y-2 shadow">
+            <ul className="menu menu-sm dropdown-content text-black lg:text-white bg-base-100 rounded-box z-[1] mt-16 w-fit p-4 pb-4 space-y-2 shadow">
               <div>{navElements}</div>
               <div className="sm:hidden">{navElementsEnd}</div>
             </ul>

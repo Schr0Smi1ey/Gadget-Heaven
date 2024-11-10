@@ -178,7 +178,7 @@ const NavBar = () => {
         {isProfileOpen && (
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content font-medium hover:bg-[#9538E2] rounded-box z-[1] mt-16 lg:mt-0 w-40 lg:w-52 p-2 shadow-lg"
+            className="menu menu-sm dropdown-content bg-base-100 font-medium hover:bg-[#9538E2] rounded-box z-[1] mt-16 lg:mt-0 w-40 lg:w-52 p-2 shadow-lg"
           >
             <li>
               <a className="justify-between p-2">
